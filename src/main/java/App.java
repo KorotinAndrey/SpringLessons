@@ -5,8 +5,8 @@ public class App {
     public static void main(String[] args) {
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
 
-        HelloWorld hello1 = context.getBean("helloWorld", HelloWorld.class);
-        HelloWorld hello2 = context.getBean("helloWorld", HelloWorld.class);
+        HelloWorld hello1 = context.getBean("helloworld", HelloWorld.class);
+        HelloWorld hello2 = context.getBean("helloworld", HelloWorld.class);
 
         Cat cat1 = context.getBean("cat", Cat.class);
         Cat cat2 = context.getBean("cat", Cat.class);
